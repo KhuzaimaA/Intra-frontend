@@ -1,0 +1,175 @@
+.container {
+  background-color: #ccd0d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  max-width: 100vw;
+  display: flex;
+  background-color: #263770;
+  margin-bottom: 50px;
+}
+
+.imageHalf {
+  width: 60%;
+  background-image: url("/images/homepageBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -8%;
+}
+
+.colorHalf {
+  width: 40%;
+  flex: 1;
+  background-color: #263770;
+  transform: skewX(19deg);
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.navbarContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hamburgerIcon {
+  padding-top: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: calc(100% - 40px);
+  width: 2px;
+  background-color: #17cf11;
+  transform: translateY(-50%);
+  margin-right: 20px;
+  right: -1px;
+}
+
+.secondaryContainer {
+  padding-right: 80px;
+  padding-left: 80px;
+  max-width: 100vw;
+}
+
+.textContainer {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.leftText {
+  font-size: medium;
+  text-align: left;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.rightText {
+  font-size: medium;
+  text-align: right;
+  width: 50%;
+}
+
+.aboutUsImage {
+  margin-top: 50px;
+  width: 100%;
+  height: 800px;
+  background-image: url("/images/about_us.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* Styles for screens smaller than 600px */
+@media (max-width: 768px) {
+  .aboutUsImage {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .imageHalf {
+    width: 100%;
+    margin-left: 0;
+    background-position: flex-start;
+    position: relative;
+  }
+
+  .imageHalf::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .textContainer {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .leftText,
+  .rightText {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Styles for screens smaller than 400px */
+@media (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+
+  .secondaryContainer {
+    padding: 0;
+  }
+}
+
+/* Styles for the navigation menu */
+.navigationMenu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navigationMenu p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navigationMenu p:hover {
+  background-color: #f2f2f2;
+}

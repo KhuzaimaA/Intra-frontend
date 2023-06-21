@@ -1,0 +1,73 @@
+.newsContainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .newsContainerLeft {
+    padding-right: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* Add position relative */
+  }
+  
+  .newsContainerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .newsImage {
+    position: relative;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+  
+  .newsImage1 {
+    position: relative;
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .overlayTextLeft {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .newsImages {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .newsImage2,
+  .newsImage3 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -70px; /* Adjust the margin value to align the images */
+    margin-left: 20px;
+    z-index: 1; /* Add z-index to place the images behind the overlay text */
+  }
+  
+  .overlayTextRight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+  }
+  

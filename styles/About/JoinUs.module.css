@@ -1,0 +1,96 @@
+
+  
+  .textButtonContainer {
+    flex: 1;
+    align-items: flex-start;
+    height: 200px;
+    width: 100px;
+    margin-top: 40px;
+  }
+  
+
+  .button {
+    padding: 10px 20px;
+    background-color: #263770;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: darkblue;
+  }
+.joinUsContainer {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 800px;
+    margin-bottom: 30px;
+  }
+  
+  .column1 {
+    flex-basis: 30%;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .column2 {
+    flex-basis: 70%;
+    padding: 45px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+  }
+  
+  .imageContainer1::before,
+  .imageContainer2::before,
+  .imageContainer3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Light blackish color with transparency */
+  }
+  
+  .imageContainer1 {
+    position: relative;
+    margin-top: 50px;
+    width: 70%;
+    height: 200px;
+    background-image: url("/images/joinPic1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-position: center;
+  }
+  
+  .imageContainer2 {
+    position: relative;
+    margin-top: 50px;
+    width: 70%;
+    height: 200px;
+    background-image: url("/images/joinPic2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+    background-position: center;
+  }
+  
+  .imageContainer3 {
+    position: relative;
+    margin-top: 50px;
+    width: 70%;
+    height: 200px;
+    background-image: url("/images/joinPic3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-position: center;
+  }
+  

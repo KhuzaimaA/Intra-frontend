@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Rizwan computers\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\Rizwan computers\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Users\Rizwan computers\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\flutter_windows_v1.9.1+hotfix.6-stable\flutter\bin;C:\Program Files\PuTTY\;C:\Program Files\Amazon\AWSCLIV2\;C:\ProgramData\chocolatey\bin;C:\Users\Rizwan computers\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\Rizwan computers\.pyenv\pyenv-win\bin;C:\Users\Rizwan computers\.pyenv\pyenv-win\shims;C:\Users\Rizwan computers\AppData\Local\Microsoft\WindowsApps;C:\Users\Rizwan computers\AppData\Local\Programs\Microsoft VS Code\bin;F:\flutter_windows_v1.9.1+hotfix.6-stable\flutter\bin;F:\jdk-17.0.2\bin;C:\Gradle;F:\Microsoft VS Code\bin;C:\Users\Rizwan computers\AppData\Roaming\npm;C:\Program Files\Amazon\AWSCLIV2\aws.exe;D:\Python 3.11;C:\Users\Rizwan computers\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\php-8.2.6-Win32-vs16-x64;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.2.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\application\intra-app\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "intra-app",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "artd": "^0.0.0",
+      "eslint": "8.43.0",
+      "eslint-config-next": "13.4.6",
+      "next": "^13.4.6",
+      "react": "18.2.0",
+      "react-dom": "18.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

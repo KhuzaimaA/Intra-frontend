@@ -1,0 +1,9 @@
+.cardContainer {
+    margin-right: 70px;
+    margin-left: 70px;
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

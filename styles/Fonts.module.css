@@ -1,0 +1,71 @@
+.whiteHeadingText {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 100%;
+    font-size: xx-large;
+    transform: skewX(-19deg); /* Adjust the skew direction to match the colorHalf element */
+  }
+
+  .greenHeading {
+    font-weight: bold;
+    font-size: 20px;
+    color: #15ae66;
+    padding-bottom: 10px;
+  }
+  
+  .blueTagline {
+    font-weight: bold;
+    font-size: 30px;
+    color: #263770;
+  }
+  
+  .greyParagraphText {
+    font-size: 20px;
+    font-weight: bold;
+    color: #737778;
+    text-align: start;
+  }
+
+  
+.headingInWhite {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .taglineInWhite {
+    color: white;
+  }
+  
+  .headingInBlack {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .taglineInGrey {
+    font-weight: bold;
+    color: grey;
+  }
+  
+  .greenBorderTransparentText {
+    color: transparent;
+    -webkit-text-stroke: 3px #15ae66; /* Set the border width and color */
+    -moz-text-stroke: 3px #15ae66;
+    -ms-text-stroke: 3px #15ae66;
+    -o-text-stroke: 3px #15ae66;
+    font-size: 300px;
+    letter-spacing: 5px; /* Adjust the spacing between letters as needed */
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .greenBorderTransparentText {
+      font-size: 100px !important; /* Adjust the font size as needed */
+    }
+  }

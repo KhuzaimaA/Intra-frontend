@@ -1,0 +1,30 @@
+.navbarContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Adjusted from "left: 0" */
+  width: 60%; /* Adjust the width as needed */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px; /* Adjust the padding as needed */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.hamburgerIcon {
+  color: white;
+  cursor: pointer;
+  font-size: 35px; /* Adjust the size as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Adjust the shadow properties as needed */
+}
+
+.menuBarContainer {
+  width: 200px;
+  background-color: white;
+  /* Add your menu bar container styles */
+}
+
+/* Add any additional styles for the navbar */
